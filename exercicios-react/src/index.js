@@ -7,12 +7,14 @@ import Member from './components/Member'
 import FunctionComponent from './components/FunctionComponent'
 import Parent from './components/Parent'
 import ClassComponent from './components/ClassComponent'
+import Hook from './components/Hook'
 
 const element = document.getElementById('root');
 ReactDOM.render(
     
     <div>
-    <ClassComponent/>
+        <Hook number={10} />
+    <ClassComponent value='test'/>
     <Parent/>
         <FunctionComponent/>
         <Family surname="Filipis">
